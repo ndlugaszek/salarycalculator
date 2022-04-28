@@ -17,7 +17,7 @@ def salary_calculator():
     user_answer = ''
     will_plot = ''
     while user_answer not in possible_answers:
-        will_plot = input("Czy narysować wykres? Wpisz 't' dla tak lub 'n' dla nie: ").lower()
+        will_plot = input("Czy pokazac wykres? Wpisz 't' dla tak lub 'n' dla nie: ").lower()
         if will_plot in possible_answers:
             break
     if will_plot == 't':
