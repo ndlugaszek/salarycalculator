@@ -1,7 +1,7 @@
 import argparse
 import yaml
-import chartplot as cp
-import netsalarycalc as nsc
+import functions.chartplot as cp
+import functions.netsalarycalc as nsc
 
 
 def salary_calculator():
@@ -27,7 +27,7 @@ def salary_calculator():
 def get_arguments():
     """Extract the cli arguments to the list"""
     parser = argparse.ArgumentParser(description='Salary calculator.')
-    parser.add_argument('-l', '--nargs-int-type', nargs='*', type=int)
+    parser.add_argument('-L', '--nargs-int-type', nargs='*', type=int)
     for _, arguments in parser.parse_args()._get_kwargs():
         if arguments is not None:
             return arguments
